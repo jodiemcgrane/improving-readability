@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Improving Readability Exploration Example</title>
+    <link
+      rel="canonical"
+      href="https://piccalil.li/blog/tips-and-notes-about-freelancing"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <article class="[ post ] [ flow ]">
+      <h1>First Design Task</h1>
+      <time datetime="2020-07-31" class="text-500 gap-right-300 color-secondary"
+        ><em>15th February, 2022</em></time
+      >
+      <p>
+        One of the first design tasks I was assigned for the Atlas design team
+        was to design a breadcrumb component. The design process I followed
+        while implementing this component consisted of two phases,
+        <strong>discovery</strong> and <strong>design</strong>.
+      </p>
+      <h2 id="heading-breadcrumb">Breadcrumb Component Task</h2>
+      <p>
+        The component I was tasked with to design was a breadcrumb component.
+        The breadcrumb is a <strong>compact navigation system</strong> used to
+        show a user’s location within the site’s hierarchy.
+      </p>
+      <h2 id="heading-discovery">Discovery Phase</h2>
+      <p>
+        During the discovery phase I explored the best practices for the
+        component including its functionality and accessibility. I explored
+        Nielson Norman Group and Designing for web accessibility W3 to note down
+        the best practices. I used a
+        <a
+          href="https://atlas.travelport.com/235fac9ab/v/0/p/348ded-breadcrumb--new"
+          >Figma file</a
+        >
+        to store my design process during the discovery phase.
+      </p>
+      <p>
+        I visited other design systems to see how they approach the breadcrumb
+        component. The design systems I approached were
+        <a
+          href="https://atlas.travelport.com/235fac9ab/v/0/p/348ded-breadcrumb--new"
+          >Atlassian</a
+        >,
+        <a
+          href="https://atlas.travelport.com/235fac9ab/v/0/p/348ded-breadcrumb--new"
+          >Ant</a
+        >
+        and
+        <a
+          href="https://atlas.travelport.com/235fac9ab/v/0/p/348ded-breadcrumb--new"
+          >Carbon</a
+        >. I made note of all the <strong>common patterns</strong> these design
+        systems use for their breadcrumb component. Keeping the developers in
+        mind, I took note of the props each design system used in their
+        breadcrumb component because after completing my design for the
+        breadcrumb, I need to provide developer specifications to the Atlas
+        developers.
+      </p>
+      <h2 id="heading-design">Design Phase</h2>
+      <p>
+        After a few hard working hours in Figma I successfully created the
+        breadcrumb component. With all of the research I gathered, I combined
+        them into one final design solution. The component consists of a maximum
+        of eight breadcrumb items that are <strong>separated</strong> using the
+        ">" symbol. Each breadcrumb item is a link except the current page
+        breadcrumb.
+      </p>
+      <p>
+        To implement this component, I reused the Atlas link component and added
+        it to the breadcrumb component along with the separators. Re-using the
+        link component and adding it to be a piece of the breadcrumb component
+        reminded of a great quote said by Drew Bridewell:
+      </p>
+      <blockquote>
+        <p>
+          "A design system acts as the connective tissue that holds together
+          your entire platform".
+        </p>
+      </blockquote>
+      <p>
+        Designing the component in the Travelport's Figma file create what is
+        known as a <strong>single source of truth</strong>. This means that when
+        other designer want to use the breadcrumb component in their own
+        wireframes they can do so without "breaking" the component. Atlas has
+        control over the source of truth breadcrumb component and, therefore, if
+        any design changes need to be made for the component, an Atlas designer
+        like me can come in and edit the source of truth component. The
+        breadcrumb component the other designers use which is can be seen as the
+        "child" of the source of truth component (parent), will
+        <strong>inherit</strong> any changes made to its parent. This does not
+        cause any interuption to the designers using the component, it simply
+        updates.
+      </p>
+      <p>
+        On the Atlas documentation site, I wrote the full documentation for the
+        breadcrumb component and it can be viewed
+        <a
+          href="https://atlas.travelport.com/235fac9ab/v/0/p/348ded-breadcrumb--new"
+          >here</a
+        >. In this documentation I highlight the overview of the component, some
+        do's and dont's, and a list of the usage guidelines.
+      </p>
+    </article>
+  </body>
+</html>
